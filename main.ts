@@ -7,7 +7,16 @@ input.onGesture(Gesture.TiltLeft, function () {
     basic.showNumber(users_second_number)
 })
 input.onButtonPressed(Button.AB, function () {
-	
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
+    basic.showNumber(users_second_number)
+    basic.showNumber(users_number)
+    music.playMelody("E E F D G B C5 - ", 120)
 })
 input.onButtonPressed(Button.B, function () {
     users_number += -1
